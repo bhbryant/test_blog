@@ -1,2 +1,2 @@
-$("#post_1_body").html("<%= escape_javascript( "<textarea cols=\"40\" rows=\"20\">#{h(@post.body)}</textarea>") %>");
-$("#post_1_body textarea").wysiwyg();
+$("#<%= "#{dom_id(@post)}_body" %>").html("<%= escape_javascript( render :partial => "form_body" ) %>");
+$("#<%= "#{dom_id(@post)}_body" %> textarea").wysiwyg();
