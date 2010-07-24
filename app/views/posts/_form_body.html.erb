@@ -1,0 +1,7 @@
+<% form_for(@post, :html => { :"data-remote"=> true }) do |f| %>
+  <%= f.error_messages %>
+  <%= f.text_area :body %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>

@@ -9683,3 +9683,1011 @@ Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:13:16) [GET]
 Rendering posts/edit
 Rendered posts/_form_body (85.6ms)
 Completed in 111ms (View: 93, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279984398243]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:31:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (19.5ms)
+Completed in 99ms (View: 80, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:31:06) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985468183"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (7.1ms)
+Completed in 40ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279985468183]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:31:32) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"body"=>"And here is some text and some more <sup>test andn</sup>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 25ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:31:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (4.4ms)
+Completed in 60ms (View: 37, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:31:45) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985507279"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.7ms)
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279985507279]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:34:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.3ms)
+Completed in 42ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:34:54) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985696333"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+ERROR: compiling _run_erb_app47views47posts47_form_body46html46erb_locals_form_body_object RAISED compile error
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:1: syntax error, unexpected ':', expecting kEND
+...plate=true ;  form_for(@post):"data-remote"=> true do |f| ; ...
+                              ^
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:1: syntax error, unexpected tASSOC, expecting kEND
+...orm_for(@post):"data-remote"=> true do |f| ; @output_buffer....
+                              ^
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:8: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47posts47_form_body46html46erb_locals_form_body_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form_body = local_assigns[:form_body];;@output_buffer = '';  __in_erb_template=true ;  form_for(@post):"data-remote"=> true do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.text_area :body ).to_s); @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:8:in `compile!'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/bbryant/code/rails/source/test_blog/app/views/posts/edit.js.erb:1:in `_run_erb_app47views47posts47edit46js46erb'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/home/bbryant/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:1: syntax error, unexpected ':', expecting kEND
+...plate=true ;  form_for(@post):"data-remote"=> true do |f| ; ...
+                              ^
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:1: syntax error, unexpected tASSOC, expecting kEND
+...orm_for(@post):"data-remote"=> true do |f| ; @output_buffer....
+                              ^
+/home/bbryant/code/rails/source/test_blog/app/views/posts/_form_body.html.erb:8: syntax error, unexpected kENSURE, expecting $end) on line #1 of app/views/posts/_form_body.html.erb:
+1: <% form_for(@post):"data-remote"=> true do |f| %>
+2:   <%= f.error_messages %>
+3:   <%= f.text_area :body %>
+4:   <p>
+
+    app/views/posts/_form_body.html.erb:8:in `compile!'
+    app/views/posts/edit.js.erb:1
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:35:10) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985712742"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (8.1ms)
+Completed in 50ms (View: 17, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279985712742]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:37:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 43ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:37:03) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985825542"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (8.1ms)
+Completed in 45ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279985825542]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:37:22) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test andn</sup>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 23ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:37:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.2ms)
+Completed in 35ms (View: 22, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:37:53) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.9ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 15:37:53', `body` = 'And here is some text and some more <sup>test a</sup>' WHERE `id` = 1[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 34ms (DB: 9) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:37:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 40ms (View: 24, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:37:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.1ms)
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:38:19) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279985901427"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.5ms)
+Completed in 26ms (View: 9, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279985901427]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:38:38) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.6ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2010-07-24 15:38:38', `body` = 'And here is some text and some more <sup>test a</sup><div>again</div>' WHERE `id` = 1[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 55ms (DB: 32) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:38:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 32ms (View: 19, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:40:15) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 23ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:40:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.4ms)
+Completed in 116ms (View: 22, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:40:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.1ms)
+Completed in 40ms (View: 21, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:40:22) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279986024254"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (4.6ms)
+Completed in 27ms (View: 10, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279986024254]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:40:27) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 22ms (DB: 3) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:40:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#update (for 192.168.137.1 at 2010-07-24 08:42:22) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+
+SyntaxError (/home/bbryant/code/rails/source/test_blog/app/controllers/posts_controller.rb:88: syntax error, unexpected kEND, expecting $end):
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 192.168.137.1 at 2010-07-24 08:42:34) [GET]
+  Parameters: {"id"=>"1"}
+
+SyntaxError (/home/bbryant/code/rails/source/test_blog/app/controllers/posts_controller.rb:88: syntax error, unexpected kEND, expecting $end):
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:42:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 41ms (View: 21, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:42:58) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279986180530"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.4ms)
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279986180530]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:43:09) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>againjj</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.7ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 15:43:09', `body` = 'And here is some text and some more <sup>test a</sup><div>againjj</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 33ms (DB: 10) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:43:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.1ms)
+Completed in 37ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:44:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (19.0ms)
+Completed in 94ms (View: 77, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:44:40) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279986282596"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (6.4ms)
+Completed in 39ms (View: 23, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279986282596]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:44:44) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.5ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 15:44:44', `body` = 'And here is some text and some more <sup>test a</sup><div>again</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 33ms (DB: 11) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:44:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_form_body (3.2ms)
+Completed in 29ms (View: 16, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:44:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 46ms (View: 26, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:45:04) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again hjjj</div>", "title"=>"This is a New Post"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.6ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 15:45:04', `body` = 'And here is some text and some more <sup>test a</sup><div>again hjjj</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 33ms (DB: 7) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:45:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (0.2ms)
+Completed in 37ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:46:10) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279986372729"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.6ms)
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279986372729]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:48:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+Completed in 43ms (View: 24, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 08:48:24) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279986506515"}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.5ms)
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279986506515]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 08:48:30) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.6ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 15:48:30', `body` = 'And here is some text and some more <sup>test a</sup><div>again</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (32.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 58ms (DB: 36) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:48:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (5.3ms)
+Completed in 37ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 08:49:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.2ms)
+Completed in 41ms (View: 23, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:08:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+Completed in 46ms (View: 23, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:08:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+Completed in 45ms (View: 23, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:08:59) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279987741717"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.4ms)
+Completed in 26ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279987741717]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:13:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.8ms)
+Completed in 118ms (View: 45, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:13:49) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988031670"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.2ms)
+Completed in 26ms (View: 9, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988031670]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:13:52) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 23ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:13:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (0.9ms)
+Completed in 28ms (View: 15, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:23:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.2ms)
+Completed in 42ms (View: 24, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:23:24) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988606063"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.6ms)
+Completed in 29ms (View: 10, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988606063]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:23:28) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 23ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:23:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (1.0ms)
+Completed in 28ms (View: 15, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:23:31) [GET]
+  Parameters: {"id"=>"undefined", "_"=>"1279988613542"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=undefined):
+  app/controllers/posts_controller.rb:17:in `show'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:23:34) [GET]
+  Parameters: {"id"=>"undefined", "_"=>"1279988616074"}
+  [4;35;1mPost Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=undefined):
+  app/controllers/posts_controller.rb:17:in `show'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/bbryant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:24:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.3ms)
+Completed in 43ms (View: 22, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:24:15) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988657443"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.3ms)
+Completed in 26ms (View: 9, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988657443]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:24:17) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 21ms (DB: 3) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:24:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (0.9ms)
+Completed in 27ms (View: 15, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:24:20) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988662064"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.2ms)
+Completed in 28ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988662064]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:24:25) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again Some more</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.8ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 16:24:25', `body` = 'And here is some text and some more <sup>test a</sup><div>again Some more</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 32ms (DB: 10) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:24:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (1.0ms)
+Completed in 19ms (View: 7, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:24:27) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988669455"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.4ms)
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988669455]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:24:35) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again Some more</div><div><br></div><div><br></div><div>adnd</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.5ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 16:24:35', `body` = 'And here is some text and some more <sup>test a</sup><div>again Some more</div><div><br></div><div><br></div><div>adnd</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:24:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (0.9ms)
+Completed in 20ms (View: 7, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:24:48) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988690752"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.4ms)
+Completed in 28ms (View: 10, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988690752]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:25:02) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again Some more</div><div><br></div><div><br></div><div>adnd</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 23ms (DB: 2) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (0.8ms)
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 46ms (View: 28, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.4ms)
+Completed in 38ms (View: 21, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.3ms)
+Completed in 43ms (View: 23, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 192.168.137.1 at 2010-07-24 09:25:31) [GET]
+  Parameters: {"id"=>"1", "_"=>"1279988733131"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/edit
+Rendered posts/_form_body (3.3ms)
+Completed in 27ms (View: 10, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1/edit?_=1279988733131]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 192.168.137.1 at 2010-07-24 09:25:36) [PUT]
+  Parameters: {"post"=>{"body"=>"And here is some text and some more <sup>test a</sup><div>again Some more</div>"}, "authenticity_token"=>"KaosBPfwdOHs3dF3nwUM1/LdYkFLtH1juLBB9slzNNA=", "id"=>"1"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Update (0.6ms)[0m   [0;1mUPDATE `posts` SET `updated_at` = '2010-07-24 16:25:36', `body` = 'And here is some text and some more <sup>test a</sup><div>again Some more</div>' WHERE `id` = 1[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://rails-dev.bryantmarkowsky.com:3000/posts/1
+Completed in 30ms (DB: 6) | 302 Found [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering posts/show
+Rendered posts/_post_body (1.0ms)
+Completed in 20ms (View: 7, DB: 2) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 42ms (View: 23, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 192.168.137.1 at 2010-07-24 09:25:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 39ms (View: 21, DB: 1) | 200 OK [http://rails-dev.bryantmarkowsky.com/posts/1]

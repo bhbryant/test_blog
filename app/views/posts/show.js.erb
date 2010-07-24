@@ -1,0 +1,4 @@
+$("#<%= "#{dom_id(@post)}_body" %>").html("<%= escape_javascript( render :partial => "post_body" ) %>");
+$("#<%= "#{dom_id(@post)}_body" %>").append('<a href="#" data-remote="true">Edit Inline</a>'.replace('#',$("#<%= "#{dom_id(@post)}_body" %>").attr('data-edit-path')));
+
+      
